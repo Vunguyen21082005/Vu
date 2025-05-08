@@ -20,5 +20,5 @@ public class User {
     String email;
     String password_hash;
     String created_at;
-   String role;
+    String role;
 }

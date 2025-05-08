@@ -18,7 +18,6 @@ public class UserService {
         if (userRepository.existsByEmail(dto.getEmail())) {
             throw new RuntimeException("Email already exists");
         }
-
         User user = new User();
         user.setUsername(dto.getUsername());
         user.setEmail(dto.getEmail());
